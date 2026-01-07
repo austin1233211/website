@@ -75,7 +75,7 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-20">
             <div className="flex-shrink-0">
-              <a href="/" className="text-white text-2xl font-bold tracking-tight">EVOLUTION</a>
+              <a href="/" className="text-white text-2xl font-bold tracking-tight">LIMITLESS</a>
             </div>
             <nav className="hidden lg:flex items-center gap-8">
               <a href="#games" className="text-white text-base font-medium hover:text-blue-400 transition-colors duration-150">Games</a>
@@ -114,7 +114,7 @@ function App() {
         {heroSlides.map((slide, index) => (
           <div key={index} className={`absolute inset-0 transition-opacity duration-500 ${index === currentSlide ? 'opacity-100' : 'opacity-0'}`}>
             <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/30 z-10" />
-            <img src={slide.image} alt={slide.title} className="w-full h-full object-cover" onError={(e) => { const target = e.target as HTMLImageElement; target.src = 'https://placehold.co/1920x800/1a1a1a/ffffff/png?text=Evolution+Gaming' }} />
+            <img src={slide.image} alt={slide.title} className="w-full h-full object-cover" onError={(e) => { const target = e.target as HTMLImageElement; target.src = 'https://placehold.co/1920x800/1a1a1a/ffffff/png?text=Limitless+Gaming' }} />
             <div className="absolute inset-0 z-20 flex items-center">
               <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
                 <div className="max-w-2xl">
@@ -178,7 +178,7 @@ function App() {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
               <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">The World Leader in Live Casino</h2>
-              <p className="text-lg text-gray-600 mb-6 leading-relaxed">Evolution is the world's leading provider of video-streamed Live Casino solutions, supplying live games to the majority of Europe's top online casino operators as well as a growing number of operators in regulated markets across the globe.</p>
+              <p className="text-lg text-gray-600 mb-6 leading-relaxed">Limitless is the world's leading provider of video-streamed Live Casino solutions, supplying live games to the majority of Europe's top online casino operators as well as a growing number of operators in regulated markets across the globe.</p>
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">Our award-winning Live Casino product portfolio includes classic table games such as Roulette, Blackjack and Baccarat, as well as innovative Game Shows like Crazy Time, Monopoly Live and Deal or No Deal.</p>
               <div className="grid grid-cols-3 gap-8">
                 <div className="text-center"><div className="text-4xl font-bold text-blue-600 mb-2">700+</div><div className="text-gray-600">Live Tables</div></div>
@@ -197,7 +197,7 @@ function App() {
       <section className="py-20 bg-gray-900 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold mb-4">Why Choose Evolution</h2>
+            <h2 className="text-3xl sm:text-4xl font-bold mb-4">Why Choose Limitless</h2>
             <p className="text-lg text-gray-400 max-w-2xl mx-auto">Industry-leading technology and innovation that sets us apart</p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -219,7 +219,7 @@ function App() {
             <a href="#" className="hidden sm:block text-blue-600 hover:text-blue-700 font-medium">View All News →</a>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[{ title: "Evolution Launches Revolutionary New Game Show", date: "January 5, 2026", excerpt: "Our latest game show combines cutting-edge technology with unprecedented entertainment value...", image: "https://images.unsplash.com/photo-1511882150382-421056c89033?w=600&h=400&fit=crop" }, { title: "Record-Breaking Q4 Results Announced", date: "January 3, 2026", excerpt: "Evolution reports exceptional growth across all markets with strong operator demand...", image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop" }, { title: "New Studio Opening in North America", date: "December 28, 2025", excerpt: "Expanding our presence with a state-of-the-art facility to serve the growing US market...", image: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&h=400&fit=crop" }].map((news, index) => (
+            {[{ title: "Limitless Launches Revolutionary New Game Show", date: "January 5, 2026", excerpt: "Our latest game show combines cutting-edge technology with unprecedented entertainment value...", image: "https://images.unsplash.com/photo-1511882150382-421056c89033?w=600&h=400&fit=crop" }, { title: "Record-Breaking Q4 Results Announced", date: "January 3, 2026", excerpt: "Limitless reports exceptional growth across all markets with strong operator demand...", image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop" }, { title: "New Studio Opening in North America", date: "December 28, 2025", excerpt: "Expanding our presence with a state-of-the-art facility to serve the growing US market...", image: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&h=400&fit=crop" }].map((news, index) => (
               <article key={index} className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group">
                 <div className="aspect-[3/2] overflow-hidden"><img src={news.image} alt={news.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" onError={(e) => { const target = e.target as HTMLImageElement; target.src = 'https://placehold.co/600x400/1a1a1a/ffffff/png?text=News' }} /></div>
                 <div className="p-6">
@@ -236,7 +236,7 @@ function App() {
 
       <section className="py-20 bg-blue-600">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">Ready to Partner with Evolution?</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">Ready to Partner with Limitless?</h2>
           <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">Join the world's leading operators and offer your players the best live casino experience</p>
           <div className="flex flex-wrap justify-center gap-4">
             <button className="bg-white hover:bg-gray-100 text-blue-600 px-8 py-4 rounded font-medium text-lg transition-all duration-150 transform hover:-translate-y-0.5">Become a Partner</button>
@@ -249,7 +249,7 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
             <div>
-              <h3 className="text-2xl font-bold mb-6">EVOLUTION</h3>
+              <h3 className="text-2xl font-bold mb-6">LIMITLESS</h3>
               <p className="text-gray-400 mb-6">The world's leading provider of video-streamed Live Casino solutions.</p>
               <div className="flex gap-4">
                 <a href="#" className="w-10 h-10 bg-gray-800 hover:bg-blue-600 rounded-full flex items-center justify-center transition-colors duration-150"><span className="sr-only">LinkedIn</span>in</a>
@@ -278,14 +278,14 @@ function App() {
             <div>
               <h4 className="text-lg font-semibold mb-6">Contact</h4>
               <ul className="space-y-3">
-                <li className="text-gray-400">info@evolution.com</li>
+                <li className="text-gray-400">info@limitless.com</li>
                 <li className="text-gray-400">+1 (555) 123-4567</li>
                 <li className="text-gray-400">Stockholm, Sweden</li>
               </ul>
             </div>
           </div>
           <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-gray-400 text-sm">&copy; 2026 Evolution Gaming. All rights reserved.</p>
+            <p className="text-gray-400 text-sm">&copy; 2026 Limitless Gaming. All rights reserved.</p>
             <div className="flex gap-6">
               <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors duration-150">Privacy Policy</a>
               <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors duration-150">Terms of Service</a>
