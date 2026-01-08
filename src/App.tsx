@@ -156,7 +156,7 @@ function App() {
             {/* Card 1 - Live Dealers */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 group">
               <div className="aspect-[4/3] overflow-hidden">
-                <img src="https://images.unsplash.com/photo-1596838132731-3301c3fd4317?w=600&h=450&fit=crop" alt="Live Casino Dealer" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onError={(e) => { const target = e.target as HTMLImageElement; target.src = 'https://placehold.co/600x450/1a1a1a/ffffff/png?text=Live+Dealer' }} />
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=600&h=450&fit=crop&crop=face" alt="Live Casino Dealer" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onError={(e) => { const target = e.target as HTMLImageElement; target.src = 'https://placehold.co/600x450/1a1a1a/ffffff/png?text=Live+Dealer' }} />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-900 mb-3">Live Dealers: Revolutionizing Casino Gaming</h3>
@@ -166,7 +166,7 @@ function App() {
             {/* Card 2 - AI Dealers */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 group">
               <div className="aspect-[4/3] overflow-hidden">
-                <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=450&fit=crop" alt="AI Dealer Technology" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onError={(e) => { const target = e.target as HTMLImageElement; target.src = 'https://placehold.co/600x450/1a1a1a/ffffff/png?text=AI+Dealer' }} />
+                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=600&h=450&fit=crop&crop=face" alt="AI Dealer Technology" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onError={(e) => { const target = e.target as HTMLImageElement; target.src = 'https://placehold.co/600x450/1a1a1a/ffffff/png?text=AI+Dealer' }} />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-900 mb-3">AI Dealer Smart Scaling: Infinite Expansion</h3>
@@ -176,7 +176,7 @@ function App() {
             {/* Card 3 - Multiverse Gaming */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 group">
               <div className="aspect-[4/3] overflow-hidden">
-                <img src="https://images.unsplash.com/photo-1614850523459-c2f4c699c52e?w=600&h=450&fit=crop" alt="AI Gaming Multiverse" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onError={(e) => { const target = e.target as HTMLImageElement; target.src = 'https://placehold.co/600x450/1a1a1a/ffffff/png?text=Gaming+Multiverse' }} />
+                <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=600&h=450&fit=crop&crop=face" alt="AI Gaming Multiverse" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onError={(e) => { const target = e.target as HTMLImageElement; target.src = 'https://placehold.co/600x450/1a1a1a/ffffff/png?text=Gaming+Multiverse' }} />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-900 mb-3">AI-Driven Multiverse of Live Gaming</h3>
