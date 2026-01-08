@@ -18,6 +18,16 @@ const gamesData = [
   { id: 13, title: "Sic Bo", category: "live-casino", badge: "", image: "https://images.unsplash.com/photo-1522069169874-c58ec4b76be5?w=400&h=267&fit=crop" },
   { id: 14, title: "Cash or Crash", category: "game-shows", badge: "HOT", image: "https://images.unsplash.com/photo-1559526324-593bc073d938?w=400&h=267&fit=crop" },
   { id: 15, title: "Auto Roulette", category: "live-casino", badge: "", image: "https://images.unsplash.com/photo-1596838132731-3301c3fd4317?w=400&h=267&fit=crop" },
+  { id: 16, title: "Hot Hot Fruit", category: "slots", badge: "HOT", image: "https://images.unsplash.com/photo-1596838132731-3301c3fd4317?w=400&h=267&fit=crop" },
+  { id: 17, title: "Fa Cai Shen Deluxe", category: "slots", badge: "NEW", image: "https://images.unsplash.com/photo-1511882150382-421056c89033?w=400&h=267&fit=crop" },
+  { id: 18, title: "Koi Gate", category: "slots", badge: "", image: "https://images.unsplash.com/photo-1541278107931-e006523892df?w=400&h=267&fit=crop" },
+  { id: 19, title: "5 Lucky Lions", category: "slots", badge: "HOT", image: "https://images.unsplash.com/photo-1518133910546-b6c2fb7d79e3?w=400&h=267&fit=crop" },
+  { id: 20, title: "Wealth Inn", category: "slots", badge: "", image: "https://images.unsplash.com/photo-1606167668584-78701c57f13d?w=400&h=267&fit=crop" },
+  { id: 21, title: "Egyptian Dreams Deluxe", category: "slots", badge: "NEW", image: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=400&h=267&fit=crop" },
+  { id: 22, title: "Mystic Fortune Deluxe", category: "slots", badge: "", image: "https://images.unsplash.com/photo-1596731498067-a5c0e5c5e8c5?w=400&h=267&fit=crop" },
+  { id: 23, title: "Nuwa", category: "slots", badge: "HOT", image: "https://images.unsplash.com/photo-1611996575749-79a3a250f948?w=400&h=267&fit=crop" },
+  { id: 24, title: "Bird of Thunder", category: "slots", badge: "", image: "https://images.unsplash.com/photo-1609743522653-52354461eb27?w=400&h=267&fit=crop" },
+  { id: 25, title: "Jungle Jam", category: "slots", badge: "NEW", image: "https://images.unsplash.com/photo-1517457373958-b7bdd4587205?w=400&h=267&fit=crop" },
 ]
 
 const heroSlides = [
@@ -85,7 +95,7 @@ function App() {
               <a href="#contact" className="text-white text-base font-medium hover:text-blue-400 transition-colors duration-150">Contact</a>
             </nav>
             <div className="hidden lg:flex items-center gap-4">
-              <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded font-medium text-base transition-all duration-150 transform hover:-translate-y-0.5">Client Login</button>
+              <button className="bg-primary hover:bg-primary-hover text-white px-6 py-3 rounded font-medium text-base transition-all duration-150 transform hover:-translate-y-0.5">Client Login</button>
               <button className="bg-white hover:bg-gray-100 text-black px-6 py-3 rounded font-medium text-base transition-all duration-150 transform hover:-translate-y-0.5">Contact Us</button>
             </div>
             <button className="lg:hidden text-white p-2" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
@@ -102,7 +112,7 @@ function App() {
               <a href="#careers" className="block text-white text-base font-medium hover:text-blue-400">Careers</a>
               <a href="#contact" className="block text-white text-base font-medium hover:text-blue-400">Contact</a>
               <div className="pt-4 space-y-3">
-                <button className="w-full bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded font-medium">Client Login</button>
+                <button className="w-full bg-primary hover:bg-primary-hover text-white px-6 py-3 rounded font-medium">Client Login</button>
                 <button className="w-full bg-white hover:bg-gray-100 text-black px-6 py-3 rounded font-medium">Contact Us</button>
               </div>
             </div>
@@ -121,7 +131,7 @@ function App() {
                   <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">{slide.title}</h1>
                   <p className="text-lg sm:text-xl text-gray-200 mb-8">{slide.subtitle}</p>
                   <div className="flex flex-wrap gap-4">
-                    <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded font-medium text-lg transition-all duration-150 transform hover:-translate-y-0.5">Explore Games</button>
+                    <button className="bg-primary hover:bg-primary-hover text-white px-8 py-4 rounded font-medium text-lg transition-all duration-150 transform hover:-translate-y-0.5">Explore Games</button>
                     <button className="bg-transparent border-2 border-white hover:bg-white hover:text-black text-white px-8 py-4 rounded font-medium text-lg transition-all duration-150">Learn More</button>
                   </div>
                 </div>
@@ -133,7 +143,7 @@ function App() {
         <button onClick={nextSlide} className="absolute right-4 top-1/2 -translate-y-1/2 z-30 bg-white/20 hover:bg-white/40 text-white p-3 rounded-full transition-all duration-300"><ChevronRight size={24} /></button>
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-30 flex gap-3">
           {heroSlides.map((_, index) => (
-            <button key={index} onClick={() => setCurrentSlide(index)} className={`w-3 h-3 rounded-full transition-all duration-300 ${index === currentSlide ? 'bg-blue-600 w-8' : 'bg-white/50 hover:bg-white/80'}`} />
+            <button key={index} onClick={() => setCurrentSlide(index)} className={`w-3 h-3 rounded-full transition-all duration-300 ${index === currentSlide ? 'bg-primary w-8' : 'bg-white/50 hover:bg-white/80'}`} />
           ))}
         </div>
       </section>
@@ -142,17 +152,17 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Our Games</h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">Discover our award-winning portfolio of live casino games and game shows</p>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">Discover our award-winning portfolio of live casino games, game shows, and slots</p>
           </div>
           <div className="flex flex-col sm:flex-row justify-between items-center gap-6 mb-10">
             <div className="flex gap-2 border-b-2 border-gray-200 pb-0">
-              {[{ id: 'all', label: 'All Games' }, { id: 'live-casino', label: 'Live Casino' }, { id: 'game-shows', label: 'Game Shows' }].map((filter) => (
-                <button key={filter.id} onClick={() => setActiveFilter(filter.id)} className={`px-6 py-3 text-base font-medium transition-all duration-300 border-b-3 -mb-0.5 ${activeFilter === filter.id ? 'text-blue-600 border-b-2 border-blue-600' : 'text-gray-600 hover:text-gray-900 border-b-2 border-transparent hover:bg-gray-100'}`}>{filter.label}</button>
+              {[{ id: 'all', label: 'All Games' }, { id: 'live-casino', label: 'Live Casino' }, { id: 'game-shows', label: 'Game Shows' }, { id: 'slots', label: 'Slots' }].map((filter) => (
+                <button key={filter.id} onClick={() => setActiveFilter(filter.id)} className={`px-6 py-3 text-base font-medium transition-all duration-300 border-b-3 -mb-0.5 ${activeFilter === filter.id ? 'text-primary border-b-2 border-primary' : 'text-gray-600 hover:text-gray-900 border-b-2 border-transparent hover:bg-gray-100'}`}>{filter.label}</button>
               ))}
             </div>
             <div className="relative">
               <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400" size={20} />
-              <input type="text" placeholder="Search games..." value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} className="w-72 pl-12 pr-4 py-3 border border-gray-300 rounded focus:outline-none focus:border-blue-600 focus:ring-2 focus:ring-blue-600/20 transition-all duration-300" />
+              <input type="text" placeholder="Search games..." value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} className="w-72 pl-12 pr-4 py-3 border border-gray-300 rounded focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all duration-300" />
             </div>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
@@ -161,11 +171,11 @@ function App() {
                 <div className="relative aspect-[3/2] overflow-hidden">
                   <img src={game.image} alt={game.title} className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" onError={(e) => { const target = e.target as HTMLImageElement; target.src = 'https://placehold.co/400x267/1a1a1a/ffffff/png?text=' + encodeURIComponent(game.title) }} />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-5">
-                    <button className="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2.5 rounded text-sm font-medium self-start flex items-center gap-2 transition-colors duration-150"><Play size={16} fill="white" />Play Now</button>
+                    <button className="bg-primary hover:bg-primary-hover text-white px-5 py-2.5 rounded text-sm font-medium self-start flex items-center gap-2 transition-colors duration-150"><Play size={16} fill="white" />Play Now</button>
                   </div>
                   {game.badge && <span className={`absolute top-3 right-3 px-3 py-1 rounded-full text-xs font-semibold uppercase ${game.badge === 'NEW' ? 'bg-yellow-400 text-black' : 'bg-red-500 text-white'}`}>{game.badge}</span>}
                 </div>
-                <div className="p-4"><h3 className="text-lg font-semibold text-gray-900 group-hover:text-blue-600 transition-colors duration-150">{game.title}</h3></div>
+                <div className="p-4"><h3 className="text-lg font-semibold text-gray-900 group-hover:text-primary transition-colors duration-150">{game.title}</h3></div>
               </div>
             ))}
           </div>
@@ -181,14 +191,14 @@ function App() {
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">Limitless is the world's leading provider of video-streamed Live Casino solutions, supplying live games to the majority of Europe's top online casino operators as well as a growing number of operators in regulated markets across the globe.</p>
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">Our award-winning Live Casino product portfolio includes classic table games such as Roulette, Blackjack and Baccarat, as well as innovative Game Shows like Crazy Time, Monopoly Live and Deal or No Deal.</p>
               <div className="grid grid-cols-3 gap-8">
-                <div className="text-center"><div className="text-4xl font-bold text-blue-600 mb-2">700+</div><div className="text-gray-600">Live Tables</div></div>
-                <div className="text-center"><div className="text-4xl font-bold text-blue-600 mb-2">15+</div><div className="text-gray-600">Studios</div></div>
-                <div className="text-center"><div className="text-4xl font-bold text-blue-600 mb-2">500+</div><div className="text-gray-600">Operators</div></div>
+                <div className="text-center"><div className="text-4xl font-bold text-primary mb-2">700+</div><div className="text-gray-600">Live Tables</div></div>
+                <div className="text-center"><div className="text-4xl font-bold text-primary mb-2">15+</div><div className="text-gray-600">Studios</div></div>
+                <div className="text-center"><div className="text-4xl font-bold text-primary mb-2">500+</div><div className="text-gray-600">Operators</div></div>
               </div>
             </div>
             <div className="relative">
               <img src="https://images.unsplash.com/photo-1596838132731-3301c3fd4317?w=800&h=600&fit=crop" alt="Live Casino Studio" className="rounded-2xl shadow-2xl" onError={(e) => { const target = e.target as HTMLImageElement; target.src = 'https://placehold.co/800x600/1a1a1a/ffffff/png?text=Live+Casino+Studio' }} />
-              <div className="absolute -bottom-6 -left-6 bg-blue-600 text-white p-6 rounded-xl shadow-xl"><div className="text-3xl font-bold">15+</div><div className="text-sm">Years of Excellence</div></div>
+              <div className="absolute -bottom-6 -left-6 bg-primary text-white p-6 rounded-xl shadow-xl"><div className="text-3xl font-bold">15+</div><div className="text-sm">Years of Excellence</div></div>
             </div>
           </div>
         </div>
@@ -216,7 +226,7 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center mb-12">
             <div><h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-2">Latest News</h2><p className="text-lg text-gray-600">Stay updated with our latest announcements</p></div>
-            <a href="#" className="hidden sm:block text-blue-600 hover:text-blue-700 font-medium">View All News →</a>
+            <a href="#" className="hidden sm:block text-primary hover:text-primary-hover font-medium">View All News →</a>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[{ title: "Limitless Launches Revolutionary New Game Show", date: "January 5, 2026", excerpt: "Our latest game show combines cutting-edge technology with unprecedented entertainment value...", image: "https://images.unsplash.com/photo-1511882150382-421056c89033?w=600&h=400&fit=crop" }, { title: "Record-Breaking Q4 Results Announced", date: "January 3, 2026", excerpt: "Limitless reports exceptional growth across all markets with strong operator demand...", image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop" }, { title: "New Studio Opening in North America", date: "December 28, 2025", excerpt: "Expanding our presence with a state-of-the-art facility to serve the growing US market...", image: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&h=400&fit=crop" }].map((news, index) => (
@@ -224,9 +234,9 @@ function App() {
                 <div className="aspect-[3/2] overflow-hidden"><img src={news.image} alt={news.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" onError={(e) => { const target = e.target as HTMLImageElement; target.src = 'https://placehold.co/600x400/1a1a1a/ffffff/png?text=News' }} /></div>
                 <div className="p-6">
                   <div className="text-sm text-gray-500 mb-2">{news.date}</div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors duration-150">{news.title}</h3>
+                  <h3 className="text-xl font-semibold text-gray-900 mb-3 group-hover:text-primary transition-colors duration-150">{news.title}</h3>
                   <p className="text-gray-600 mb-4">{news.excerpt}</p>
-                  <a href="#" className="text-blue-600 hover:text-blue-700 font-medium">Read More →</a>
+                  <a href="#" className="text-primary hover:text-primary-hover font-medium">Read More →</a>
                 </div>
               </article>
             ))}
@@ -234,13 +244,13 @@ function App() {
         </div>
       </section>
 
-      <section className="py-20 bg-blue-600">
+      <section className="py-20 bg-primary">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">Ready to Partner with Limitless?</h2>
           <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">Join the world's leading operators and offer your players the best live casino experience</p>
           <div className="flex flex-wrap justify-center gap-4">
-            <button className="bg-white hover:bg-gray-100 text-blue-600 px-8 py-4 rounded font-medium text-lg transition-all duration-150 transform hover:-translate-y-0.5">Become a Partner</button>
-            <button className="bg-transparent border-2 border-white hover:bg-white hover:text-blue-600 text-white px-8 py-4 rounded font-medium text-lg transition-all duration-150">Contact Sales</button>
+            <button className="bg-white hover:bg-gray-100 text-primary px-8 py-4 rounded font-medium text-lg transition-all duration-150 transform hover:-translate-y-0.5">Become a Partner</button>
+            <button className="bg-transparent border-2 border-white hover:bg-white hover:text-primary text-white px-8 py-4 rounded font-medium text-lg transition-all duration-150">Contact Sales</button>
           </div>
         </div>
       </section>
@@ -252,19 +262,20 @@ function App() {
               <h3 className="text-2xl font-bold mb-6">LIMITLESS</h3>
               <p className="text-gray-400 mb-6">The world's leading provider of video-streamed Live Casino solutions.</p>
               <div className="flex gap-4">
-                <a href="#" className="w-10 h-10 bg-gray-800 hover:bg-blue-600 rounded-full flex items-center justify-center transition-colors duration-150"><span className="sr-only">LinkedIn</span>in</a>
-                <a href="#" className="w-10 h-10 bg-gray-800 hover:bg-blue-600 rounded-full flex items-center justify-center transition-colors duration-150"><span className="sr-only">Twitter</span>X</a>
-                <a href="#" className="w-10 h-10 bg-gray-800 hover:bg-blue-600 rounded-full flex items-center justify-center transition-colors duration-150"><span className="sr-only">YouTube</span>▶</a>
+                <a href="#" className="w-10 h-10 bg-gray-800 hover:bg-primary rounded-full flex items-center justify-center transition-colors duration-150"><span className="sr-only">LinkedIn</span>in</a>
+                <a href="#" className="w-10 h-10 bg-gray-800 hover:bg-primary rounded-full flex items-center justify-center transition-colors duration-150"><span className="sr-only">Twitter</span>X</a>
+                <a href="#" className="w-10 h-10 bg-gray-800 hover:bg-primary rounded-full flex items-center justify-center transition-colors duration-150"><span className="sr-only">YouTube</span>▶</a>
               </div>
             </div>
             <div>
               <h4 className="text-lg font-semibold mb-6">Products</h4>
-              <ul className="space-y-3">
-                <li><a href="#" className="text-gray-400 hover:text-white transition-colors duration-150">Live Casino</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-white transition-colors duration-150">Game Shows</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-white transition-colors duration-150">First Person</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-white transition-colors duration-150">Slots</a></li>
-              </ul>
+                            <ul className="space-y-3">
+                              <li><a href="#" className="text-gray-400 hover:text-white transition-colors duration-150">Live Casino</a></li>
+                              <li><a href="#" className="text-gray-400 hover:text-white transition-colors duration-150">Game Shows</a></li>
+                              <li><a href="#" className="text-gray-400 hover:text-white transition-colors duration-150">Slots</a></li>
+                              <li><a href="#" className="text-gray-400 hover:text-white transition-colors duration-150">First Person</a></li>
+                              <li><a href="#" className="text-gray-400 hover:text-white transition-colors duration-150">RNG</a></li>
+                            </ul>
             </div>
             <div>
               <h4 className="text-lg font-semibold mb-6">Company</h4>
