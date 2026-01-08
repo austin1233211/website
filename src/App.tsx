@@ -32,18 +32,18 @@ const gamesData = [
 
 const heroSlides = [
   {
-    title: "The World's Leading Live Casino Provider",
-    subtitle: "Experience the thrill of real casino gaming from anywhere",
+    title: "Live Dealers & AI-Powered Gaming",
+    subtitle: "Experience the perfect blend of human expertise and cutting-edge AI technology",
     image: "https://images.unsplash.com/photo-1596838132731-3301c3fd4317?w=1920&h=800&fit=crop"
   },
   {
-    title: "Revolutionary Game Shows",
-    subtitle: "Innovative entertainment that captivates players worldwide",
+    title: "Professional Live Dealers 24/7",
+    subtitle: "Real dealers, real tables, real excitement - streaming live from our world-class studios",
     image: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=1920&h=800&fit=crop"
   },
   {
-    title: "Cutting-Edge Technology",
-    subtitle: "State-of-the-art streaming and gaming solutions",
+    title: "Next-Gen AI Dealer Technology",
+    subtitle: "Revolutionary AI dealers delivering seamless, intelligent gameplay around the clock",
     image: "https://images.unsplash.com/photo-1518133910546-b6c2fb7d79e3?w=1920&h=800&fit=crop"
   }
 ]
@@ -145,6 +145,57 @@ function App() {
           {heroSlides.map((_, index) => (
             <button key={index} onClick={() => setCurrentSlide(index)} className={`w-3 h-3 rounded-full transition-all duration-300 ${index === currentSlide ? 'bg-primary w-8' : 'bg-white/50 hover:bg-white/80'}`} />
           ))}
+        </div>
+      </section>
+
+      {/* Live & AI Dealers Section */}
+      <section className="py-20 bg-gradient-to-b from-gray-900 to-black text-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">Live Dealers & AI Technology</h2>
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto">The future of casino gaming combines the authenticity of professional live dealers with the innovation of AI-powered gameplay</p>
+          </div>
+          <div className="grid lg:grid-cols-2 gap-12">
+            {/* Live Dealers Card */}
+            <div className="bg-gradient-to-br from-primary to-blue-800 rounded-2xl p-8 lg:p-10 shadow-2xl transform hover:scale-105 transition-all duration-300">
+              <div className="flex items-center gap-4 mb-6">
+                <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center text-3xl">👤</div>
+                <h3 className="text-2xl lg:text-3xl font-bold">Professional Live Dealers</h3>
+              </div>
+              <p className="text-lg text-blue-100 mb-6 leading-relaxed">Our world-class live dealers bring the authentic casino atmosphere directly to your screen. Trained professionals from our state-of-the-art studios deliver engaging, real-time gameplay with personality and expertise.</p>
+              <ul className="space-y-3 mb-8">
+                <li className="flex items-center gap-3"><span className="w-6 h-6 bg-white/20 rounded-full flex items-center justify-center text-sm">✓</span> 24/7 live streaming from global studios</li>
+                <li className="flex items-center gap-3"><span className="w-6 h-6 bg-white/20 rounded-full flex items-center justify-center text-sm">✓</span> Multi-language support</li>
+                <li className="flex items-center gap-3"><span className="w-6 h-6 bg-white/20 rounded-full flex items-center justify-center text-sm">✓</span> Interactive chat with dealers</li>
+                <li className="flex items-center gap-3"><span className="w-6 h-6 bg-white/20 rounded-full flex items-center justify-center text-sm">✓</span> HD multi-camera angles</li>
+              </ul>
+              <button className="bg-white text-primary hover:bg-gray-100 px-6 py-3 rounded-lg font-semibold transition-colors duration-150">Meet Our Dealers</button>
+            </div>
+            {/* AI Dealers Card */}
+            <div className="bg-gradient-to-br from-purple-600 to-purple-900 rounded-2xl p-8 lg:p-10 shadow-2xl transform hover:scale-105 transition-all duration-300">
+              <div className="flex items-center gap-4 mb-6">
+                <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center text-3xl">🤖</div>
+                <h3 className="text-2xl lg:text-3xl font-bold">AI-Powered Dealers</h3>
+              </div>
+              <p className="text-lg text-purple-100 mb-6 leading-relaxed">Experience the next generation of gaming with our revolutionary AI dealers. Powered by advanced machine learning, they deliver consistent, fair, and lightning-fast gameplay while maintaining engaging interactions.</p>
+              <ul className="space-y-3 mb-8">
+                <li className="flex items-center gap-3"><span className="w-6 h-6 bg-white/20 rounded-full flex items-center justify-center text-sm">✓</span> Instant game pace - no waiting</li>
+                <li className="flex items-center gap-3"><span className="w-6 h-6 bg-white/20 rounded-full flex items-center justify-center text-sm">✓</span> Perfectly consistent dealing</li>
+                <li className="flex items-center gap-3"><span className="w-6 h-6 bg-white/20 rounded-full flex items-center justify-center text-sm">✓</span> Natural language interaction</li>
+                <li className="flex items-center gap-3"><span className="w-6 h-6 bg-white/20 rounded-full flex items-center justify-center text-sm">✓</span> Adaptive difficulty levels</li>
+              </ul>
+              <button className="bg-white text-purple-700 hover:bg-gray-100 px-6 py-3 rounded-lg font-semibold transition-colors duration-150">Explore AI Gaming</button>
+            </div>
+          </div>
+          <div className="mt-16 text-center">
+            <div className="inline-flex items-center gap-8 bg-white/10 rounded-full px-8 py-4">
+              <div className="text-center"><div className="text-3xl font-bold">1000+</div><div className="text-sm text-gray-400">Live Dealers</div></div>
+              <div className="w-px h-12 bg-white/20"></div>
+              <div className="text-center"><div className="text-3xl font-bold">50+</div><div className="text-sm text-gray-400">AI Models</div></div>
+              <div className="w-px h-12 bg-white/20"></div>
+              <div className="text-center"><div className="text-3xl font-bold">99.9%</div><div className="text-sm text-gray-400">Uptime</div></div>
+            </div>
+          </div>
         </div>
       </section>
 
