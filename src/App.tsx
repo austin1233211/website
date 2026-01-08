@@ -148,52 +148,84 @@ function App() {
         </div>
       </section>
 
-      {/* Live & AI Dealers Section */}
-      <section className="py-20 bg-gradient-to-b from-gray-900 to-black text-white">
+      {/* Live & AI Dealers Section - EEAI Style */}
+      <section className="py-20 bg-gradient-to-b from-white to-blue-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">Live Dealers & AI Technology</h2>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">The future of casino gaming combines the authenticity of professional live dealers with the innovation of AI-powered gameplay</p>
-          </div>
-          <div className="grid lg:grid-cols-2 gap-12">
-            {/* Live Dealers Card */}
-            <div className="bg-gradient-to-br from-primary to-blue-800 rounded-2xl p-8 lg:p-10 shadow-2xl transform hover:scale-105 transition-all duration-300">
-              <div className="flex items-center gap-4 mb-6">
-                <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center text-3xl">👤</div>
-                <h3 className="text-2xl lg:text-3xl font-bold">Professional Live Dealers</h3>
+          {/* 3-Column Feature Cards */}
+          <div className="grid md:grid-cols-3 gap-8 mb-16">
+            {/* Card 1 - Live Dealers */}
+            <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 group">
+              <div className="aspect-[4/3] overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1596838132731-3301c3fd4317?w=600&h=450&fit=crop" alt="Live Casino Dealer" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onError={(e) => { const target = e.target as HTMLImageElement; target.src = 'https://placehold.co/600x450/1a1a1a/ffffff/png?text=Live+Dealer' }} />
               </div>
-              <p className="text-lg text-blue-100 mb-6 leading-relaxed">Our world-class live dealers bring the authentic casino atmosphere directly to your screen. Trained professionals from our state-of-the-art studios deliver engaging, real-time gameplay with personality and expertise.</p>
-              <ul className="space-y-3 mb-8">
-                <li className="flex items-center gap-3"><span className="w-6 h-6 bg-white/20 rounded-full flex items-center justify-center text-sm">✓</span> 24/7 live streaming from global studios</li>
-                <li className="flex items-center gap-3"><span className="w-6 h-6 bg-white/20 rounded-full flex items-center justify-center text-sm">✓</span> Multi-language support</li>
-                <li className="flex items-center gap-3"><span className="w-6 h-6 bg-white/20 rounded-full flex items-center justify-center text-sm">✓</span> Interactive chat with dealers</li>
-                <li className="flex items-center gap-3"><span className="w-6 h-6 bg-white/20 rounded-full flex items-center justify-center text-sm">✓</span> HD multi-camera angles</li>
-              </ul>
-              <button className="bg-white text-primary hover:bg-gray-100 px-6 py-3 rounded-lg font-semibold transition-colors duration-150">Meet Our Dealers</button>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-gray-900 mb-3">Live Dealers: Revolutionizing Casino Gaming</h3>
+                <p className="text-gray-600 leading-relaxed">Professional live dealers bring authentic casino atmosphere directly to your screen. Real-time interaction with trained professionals from our world-class studios.</p>
+              </div>
             </div>
-            {/* AI Dealers Card */}
-            <div className="bg-gradient-to-br from-purple-600 to-purple-900 rounded-2xl p-8 lg:p-10 shadow-2xl transform hover:scale-105 transition-all duration-300">
-              <div className="flex items-center gap-4 mb-6">
-                <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center text-3xl">🤖</div>
-                <h3 className="text-2xl lg:text-3xl font-bold">AI-Powered Dealers</h3>
+            {/* Card 2 - AI Dealers */}
+            <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 group">
+              <div className="aspect-[4/3] overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=450&fit=crop" alt="AI Dealer Technology" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onError={(e) => { const target = e.target as HTMLImageElement; target.src = 'https://placehold.co/600x450/1a1a1a/ffffff/png?text=AI+Dealer' }} />
               </div>
-              <p className="text-lg text-purple-100 mb-6 leading-relaxed">Experience the next generation of gaming with our revolutionary AI dealers. Powered by advanced machine learning, they deliver consistent, fair, and lightning-fast gameplay while maintaining engaging interactions.</p>
-              <ul className="space-y-3 mb-8">
-                <li className="flex items-center gap-3"><span className="w-6 h-6 bg-white/20 rounded-full flex items-center justify-center text-sm">✓</span> Instant game pace - no waiting</li>
-                <li className="flex items-center gap-3"><span className="w-6 h-6 bg-white/20 rounded-full flex items-center justify-center text-sm">✓</span> Perfectly consistent dealing</li>
-                <li className="flex items-center gap-3"><span className="w-6 h-6 bg-white/20 rounded-full flex items-center justify-center text-sm">✓</span> Natural language interaction</li>
-                <li className="flex items-center gap-3"><span className="w-6 h-6 bg-white/20 rounded-full flex items-center justify-center text-sm">✓</span> Adaptive difficulty levels</li>
-              </ul>
-              <button className="bg-white text-purple-700 hover:bg-gray-100 px-6 py-3 rounded-lg font-semibold transition-colors duration-150">Explore AI Gaming</button>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-gray-900 mb-3">AI Dealer Smart Scaling: Infinite Expansion</h3>
+                <p className="text-gray-600 leading-relaxed">Transcending physical constraints, AI-powered tables expand elastically on demand. Business scales limitlessly with no growth ceiling.</p>
+              </div>
+            </div>
+            {/* Card 3 - Multiverse Gaming */}
+            <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 group">
+              <div className="aspect-[4/3] overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1614850523459-c2f4c699c52e?w=600&h=450&fit=crop" alt="AI Gaming Multiverse" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onError={(e) => { const target = e.target as HTMLImageElement; target.src = 'https://placehold.co/600x450/1a1a1a/ffffff/png?text=Gaming+Multiverse' }} />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-gray-900 mb-3">AI-Driven Multiverse of Live Gaming</h3>
+                <p className="text-gray-600 leading-relaxed">Diverse live game matrix integrating classic and innovative gameplay, catering to multi-regional preferences worldwide.</p>
+              </div>
             </div>
           </div>
-          <div className="mt-16 text-center">
-            <div className="inline-flex items-center gap-8 bg-white/10 rounded-full px-8 py-4">
-              <div className="text-center"><div className="text-3xl font-bold">1000+</div><div className="text-sm text-gray-400">Live Dealers</div></div>
-              <div className="w-px h-12 bg-white/20"></div>
-              <div className="text-center"><div className="text-3xl font-bold">50+</div><div className="text-sm text-gray-400">AI Models</div></div>
-              <div className="w-px h-12 bg-white/20"></div>
-              <div className="text-center"><div className="text-3xl font-bold">99.9%</div><div className="text-sm text-gray-400">Uptime</div></div>
+
+          {/* Blue Banner - Fairness & Technology */}
+          <div className="bg-gradient-to-r from-primary to-blue-600 rounded-2xl p-8 lg:p-12 text-white relative overflow-hidden">
+            <div className="absolute right-0 top-0 bottom-0 w-1/3 opacity-20">
+              <svg viewBox="0 0 200 200" className="w-full h-full">
+                <circle cx="100" cy="100" r="80" fill="none" stroke="currentColor" strokeWidth="2" />
+                <circle cx="100" cy="100" r="60" fill="none" stroke="currentColor" strokeWidth="2" />
+                <circle cx="100" cy="100" r="40" fill="none" stroke="currentColor" strokeWidth="2" />
+                <path d="M100 20 L100 180 M20 100 L180 100" stroke="currentColor" strokeWidth="2" />
+              </svg>
+            </div>
+            <div className="relative z-10 flex flex-col lg:flex-row items-start lg:items-center gap-6">
+              <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center flex-shrink-0">
+                <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                </svg>
+              </div>
+              <div className="flex-1">
+                <h3 className="text-2xl lg:text-3xl font-bold mb-2">Unrivaled Fairness: Dual AI & Live Dealer Guardianship</h3>
+                <p className="text-lg text-blue-100 mb-4">Technology safeguards fairness with transparent, verifiable gameplay</p>
+                <p className="text-blue-200">Combines cutting-edge AI with professional live dealers to create truly unique fairness protection. Every bet and result remains transparently traceable, with gameplay processes and outcomes fully verifiable. Trust rooted in technology and human expertise.</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Stats Bar */}
+          <div className="mt-12 flex flex-wrap justify-center gap-8 lg:gap-16">
+            <div className="text-center">
+              <div className="text-4xl font-bold text-primary mb-1">1000+</div>
+              <div className="text-gray-600">Live Dealers</div>
+            </div>
+            <div className="text-center">
+              <div className="text-4xl font-bold text-primary mb-1">50+</div>
+              <div className="text-gray-600">AI Models</div>
+            </div>
+            <div className="text-center">
+              <div className="text-4xl font-bold text-primary mb-1">24/7</div>
+              <div className="text-gray-600">Availability</div>
+            </div>
+            <div className="text-center">
+              <div className="text-4xl font-bold text-primary mb-1">99.9%</div>
+              <div className="text-gray-600">Uptime</div>
             </div>
           </div>
         </div>
